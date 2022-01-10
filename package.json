@@ -8,5 +8,9 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/code-dot-org/dsco#readme",
-  "scripts": {}
+  "scripts": {},
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0"
+  }
 }
