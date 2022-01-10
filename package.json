@@ -1,0 +1,12 @@
+{
+  "name": "dsco",
+  "version": "0.0.0",
+  "description": "Design System for Code.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-dot-org/dsco.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/code-dot-org/dsco#readme",
+  "scripts": {}
+}
