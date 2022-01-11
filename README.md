@@ -1,5 +1,10 @@
 Design System for Code.org (DSCO). This repository contains the styles and React components that translate that design system to code and publishes them as independent NPM packages.
 
+# Setup
+
+1. Clone this repository and navigate to the root directory.
+2. `npm install`
+
 # Resources
 
 ## Tools
