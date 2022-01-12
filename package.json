@@ -8,7 +8,9 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/code-dot-org/dsco_#readme",
-  "scripts": {},
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
