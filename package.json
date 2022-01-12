@@ -1,13 +1,13 @@
 {
-  "name": "dsco",
+  "name": "dsco_",
   "version": "0.0.0",
   "description": "Design System for Code.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/code-dot-org/dsco.git"
+    "url": "git+https://github.com/code-dot-org/dsco_.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/code-dot-org/dsco#readme",
+  "homepage": "https://github.com/code-dot-org/dsco_#readme",
   "scripts": {},
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
