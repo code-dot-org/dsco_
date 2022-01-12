@@ -1,4 +1,4 @@
-# Design System for Code.org (DSCO).
+# Design System for Code.org (DSCO)
 
 This repository translates our design system to code and publishes the corresponding styles and React components as independent NPM packages. It's "dsco\_" because "dsco" wasn't available as an NPM organization :)
 
