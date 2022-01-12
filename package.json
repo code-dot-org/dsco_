@@ -10,8 +10,8 @@
   "homepage": "https://github.com/code-dot-org/dsco_#readme",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
