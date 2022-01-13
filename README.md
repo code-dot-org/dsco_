@@ -7,6 +7,10 @@ This repository translates our design system to code and publishes the correspon
 1. Clone this repository and navigate to the root directory.
 2. `npm install`
 
+## Storybook
+
+Run `npm run storybook` from the root directory to start storybook locally.
+
 ## Resources
 
 ### Tools
