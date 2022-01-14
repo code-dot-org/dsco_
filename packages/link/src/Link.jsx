@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // TODO: add prop-types
 
 export default function Link(props) {
