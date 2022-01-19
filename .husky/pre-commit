@@ -3,8 +3,8 @@
 
 echo "Running prettier..."
 npx pretty-quick --staged
-
 echo "\n"
 
 echo "Running eslint..."
 npx eslint --ext js,jsx .
+echo "\n"

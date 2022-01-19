@@ -3,3 +3,4 @@
 
 echo "Linting commit message..."
 npx --no -- commitlint --edit $1
+echo "\n"
