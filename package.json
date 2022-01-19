@@ -11,6 +11,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build-storybook": "build-storybook",
+    "postinstall": "husky install",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
