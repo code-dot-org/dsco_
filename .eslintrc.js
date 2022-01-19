@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
   ],
@@ -15,12 +16,16 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['jsx-a11y', 'react'],
+  plugins: ['import', 'jsx-a11y', 'react'],
   rules: {
     curly: 'error',
     'default-case': 'error',
     'dot-notation': 'error',
     eqeqeq: 'error',
+    // TODO: Turn import/no-unresolved back on once webpack is configured.
+    // See https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
+    // and https://github.com/import-js/eslint-plugin-import/blob/main/README.md#resolvers for details.
+    'import/no-unresolved': 'off',
     'no-duplicate-imports': 'error',
     'no-implicit-globals': 'error',
     'no-magic-numbers': 'error',
