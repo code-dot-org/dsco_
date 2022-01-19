@@ -8,6 +8,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -16,7 +17,7 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['import', 'jsx-a11y', 'react'],
+  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
   rules: {
     curly: 'error',
     'default-case': 'error',
