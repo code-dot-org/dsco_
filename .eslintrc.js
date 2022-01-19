@@ -17,7 +17,6 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
   rules: {
     curly: 'error',
     'default-case': 'error',
