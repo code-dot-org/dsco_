@@ -19,3 +19,4 @@ Run `npm run storybook` from the root directory to start storybook locally.
 - [storybook](https://storybook.js.org/docs/react/get-started/introduction) for documenting components.
 - [commitlint](https://commitlint.js.org) enforces commit linting. Currently set up to enforce the [Conventional Commits](https://www.conventionalcommits.org) specification.
 - [husky](https://typicode.github.io/husky) for git hooks.
+- [prettier](https://prettier.io) for code formatting. It's best to [configure your editor](https://prettier.io/docs/en/editors.html) to run prettier on save, but it will also auto-format before committing.
