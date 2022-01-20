@@ -3,7 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -11,12 +17,16 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['react'],
   rules: {
     curly: 'error',
     'default-case': 'error',
     'dot-notation': 'error',
     eqeqeq: 'error',
+    // TODO: Turn import/no-unresolved back on once webpack is configured.
+    // See https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
+    // and https://github.com/import-js/eslint-plugin-import/blob/main/README.md#resolvers for details.
+    'import/no-unresolved': 'off',
+    'import/order': 'error',
     'no-duplicate-imports': 'error',
     'no-implicit-globals': 'error',
     'no-magic-numbers': 'error',
@@ -68,7 +78,6 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-tag-spacing': 'error',
-    'sort-imports': 'error',
     'sort-keys': 'error',
     'spaced-comment': ['error', 'always', {block: {balanced: true}}],
     strict: 'error',
