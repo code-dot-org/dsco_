@@ -26,6 +26,7 @@ module.exports = {
     // See https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
     // and https://github.com/import-js/eslint-plugin-import/blob/main/README.md#resolvers for details.
     'import/no-unresolved': 'off',
+    'import/order': 'error',
     'no-duplicate-imports': 'error',
     'no-implicit-globals': 'error',
     'no-magic-numbers': 'error',
@@ -77,7 +78,6 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-tag-spacing': 'error',
-    'sort-imports': 'error',
     'sort-keys': 'error',
     'spaced-comment': ['error', 'always', {block: {balanced: true}}],
     strict: 'error',
