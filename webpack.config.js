@@ -15,10 +15,29 @@ module.exports = {
           options: babelConfig,
         },
       },
+      {
+        test: /\.scss$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          'sass-loader',
+        ],
+        include: /\.module\.scss$/,
+      },
+      {
+        test: /\.scss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        exclude: /\.module\.scss$/,
+      },
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.scss'],
   },
   // Target and webpack-node-externals are required to exclude node_modules from package bundles.
   target: 'node',
