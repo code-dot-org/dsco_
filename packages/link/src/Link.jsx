@@ -7,5 +7,5 @@ export default function Link(props) {
 
 Link.propTypes = {
   href: PropTypes.string.isRequired,
-  text: PropTypes.text.isRequired,
+  text: PropTypes.string.isRequired,
 };
