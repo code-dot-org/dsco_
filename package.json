@@ -10,12 +10,17 @@
   "homepage": "https://github.com/code-dot-org/dsco_#readme",
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "build": "NODE_ENV=development lerna run build",
+    "build:prod": "NODE_ENV=production lerna run build",
     "build-storybook": "build-storybook",
     "postinstall": "husky install",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@storybook/addon-actions": "^6.4.12",
@@ -37,7 +42,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {}
 }
