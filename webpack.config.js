@@ -1,4 +1,5 @@
 const babelConfig = require('./babel.config');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   output: {
@@ -19,4 +20,7 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
+  // Target and webpack-node-externals are required to exclude node_modules from package bundles.
+  target: 'node',
+  externals: [nodeExternals()],
 };
