@@ -22,10 +22,6 @@ module.exports = {
     'default-case': 'error',
     'dot-notation': 'error',
     eqeqeq: 'error',
-    // TODO: Turn import/no-unresolved back on once webpack is configured.
-    // See https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
-    // and https://github.com/import-js/eslint-plugin-import/blob/main/README.md#resolvers for details.
-    'import/no-unresolved': 'off',
     'import/order': 'error',
     'no-duplicate-imports': 'error',
     'no-implicit-globals': 'error',
@@ -84,6 +80,9 @@ module.exports = {
     yoda: 'error',
   },
   settings: {
+    'import/resolver': {
+      webpack: {config: './webpack.config.js'},
+    },
     react: {version: 'detect'},
   },
 };
