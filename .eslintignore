@@ -4,5 +4,6 @@ packages/**/dist/
 .eslintrc.js
 babel.config.js
 commitlint.config.js
+postcss.config.js
 prettier.config.js
 webpack.config.js

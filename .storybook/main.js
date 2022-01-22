@@ -1,8 +1,22 @@
+const webpackConfig = require('../webpack.config');
+
 module.exports = {
   stories: ['../packages/**/__stories__/*.stories.js'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   framework: '@storybook/react',
   core: {
     builder: 'webpack5',
+  },
+  webpackFinal: async (config) => {
+    return {
+      ...config,
+      // Add our webpack plugins to default storybook plugins.
+      plugins: [...config.plugins, ...webpackConfig.plugins],
+      module: {
+        ...config.module,
+        // Replace default storybook rules with our webpack rules.
+        rules: webpackConfig.module.rules,
+      },
+    };
   },
 };

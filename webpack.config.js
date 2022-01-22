@@ -1,10 +1,12 @@
 const babelConfig = require('./babel.config');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   output: {
     libraryTarget: 'umd',
   },
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -15,10 +17,38 @@ module.exports = {
           options: babelConfig,
         },
       },
+      {
+        test: /\.scss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              esModule: true,
+              modules: {
+                namedExport: true,
+              },
+            },
+          },
+          'postcss-loader',
+          'sass-loader',
+        ],
+        include: /\.module\.scss$/,
+      },
+      {
+        test: /\.scss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
+        exclude: /\.module\.scss$/,
+      },
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.scss'],
   },
   // Target and webpack-node-externals are required to exclude node_modules from package bundles.
   target: 'node',
