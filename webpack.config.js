@@ -2,6 +2,7 @@ const babelConfig = require('./babel.config');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
+  entry: './lib/index.js',
   output: {
     libraryTarget: 'umd',
   },
