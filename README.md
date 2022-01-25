@@ -30,7 +30,9 @@ Creating a component that should be in a new package is more involved. Make sure
 4. Now you can start creating your component, writing tests (after renaming the default test file) and Storybook stories, and documenting your component!
 5. Add any dependencies to your component with [`lerna add`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use `--scope` to only add those dependencies to the necessary package.
 
-If want to test installing your component before publishing it to NPM, here are the steps to do so:
+### Testing/Installing an Unpublished Package
+
+If want to test your package before publishing it to NPM, here are the steps to do so:
 
 1. From the root directory, run `npm run build` (for a development build) or `npm run build:prod` (for a production build).
 2. Navigate to the package root (the directory where that package's `package.json` lives).
