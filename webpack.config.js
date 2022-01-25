@@ -1,12 +1,10 @@
 const babelConfig = require('./babel.config');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   output: {
     libraryTarget: 'umd',
   },
-  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -20,12 +18,13 @@ module.exports = {
       {
         test: /\.scss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
               esModule: true,
               modules: {
+                auto: true,
                 namedExport: true,
               },
             },
@@ -33,17 +32,6 @@ module.exports = {
           'postcss-loader',
           'sass-loader',
         ],
-        include: /\.module\.scss$/,
-      },
-      {
-        test: /\.scss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
-        ],
-        exclude: /\.module\.scss$/,
       },
     ],
   },
