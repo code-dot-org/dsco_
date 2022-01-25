@@ -53,5 +53,7 @@
     "webpack-cli": "^4.9.1",
     "webpack-node-externals": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@dsco_/link": "file:packages/link"
+  }
 }

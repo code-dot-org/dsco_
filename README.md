@@ -11,6 +11,12 @@ This repository translates our design system to code and publishes the correspon
 
 Run `npm run storybook` from the root directory to start storybook locally.
 
+## Managing Common Dependencies
+
+Many packages will have the same dependencies, so managing them together will make upgrades easier and less error-prone.
+
+For managing common `devDependencies` (like React), see [this guide from Lerna](https://github.com/lerna/lerna#common-devdependencies).
+
 ## Resources
 
 ### Tools
