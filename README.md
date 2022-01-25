@@ -61,7 +61,7 @@ Many of these conventions are already enforced through linting (or should be if 
 
 - Follow the [Sass guidelines](https://sass-guidelin.es) as a styleguide.
 - Global SCSS files that will be imported elsewhere: `_kebab-case.scss`
-- SCSS module files: `_kebab-case.module.scss`
+- SCSS module files: `kebab-case.module.scss`
 - It's important to include/exclude `.module` because Webpack will bundle the file differently and it affects the scope of the styles in that file.
 
 ### Packages
