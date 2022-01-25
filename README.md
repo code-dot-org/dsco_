@@ -18,8 +18,8 @@ Creating a new component may or may not involve creating a new package for that 
 Creating a component that should be in a new package is more involved. Make sure to review [our Styleguides](#styleguides) beforehand if you aren't already familiar; consistency is key in a component library!
 
 1. Create the package scaffolding with [`lerna create @dsco_/<name>`](https://github.com/lerna/lerna/tree/main/commands/create#readme). You'll be asked a series of questions that influence how the resulting `package.json` is configured. You should change the following when prompted:
-   a. License should be "MIT"
-   b. Entry point should most likely be `dist/main.js`. This value sets the "main" field in our `package.json` and must match our Webpack output file, which is currently configured to the default output file of `dist/main.js`. If this package will have a different output file, that's fine, just make sure the "main" field matches.
+   - License should be "MIT"
+   - Entry point should most likely be `dist/main.js`. This value sets the "main" field in our `package.json` and must match our Webpack output file, which is currently configured to the default output file of `dist/main.js`. If this package will have a different output file, that's fine, just make sure the "main" field matches.
 2. Rename the entry point file to `lib/index.js`. The default will be `lib/<name>.js`, but Webpack is configured to look for a `lib/index.js` file as its entry point. This file should export all JavaScript package contents as named exports -- it shouldn't do anything else.
 3. Add a "build" script to your new `package.json` file. It should be:
 
@@ -27,8 +27,8 @@ Creating a component that should be in a new package is more involved. Make sure
 "build": "webpack --config ../../webpack.config.js"
 ```
 
-4. Now you can start creating your component, writing tests (after renaming the default test file) and Storybook stories, and documenting your component!
-5. Add any dependencies to your component with [`lerna add`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use `--scope` to only add those dependencies to the necessary package.
+4. Add any dependencies to your component with [`lerna add`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use `--scope` to only add those dependencies to the necessary package.
+5. Now you can start creating your component, writing tests (after renaming the default test file) and Storybook stories, and documenting your component!
 
 ### Testing/Installing an Unpublished Package
 
