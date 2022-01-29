@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import * as styles from './link.module.scss';
 
 export default function Link(props) {
-  return <a href={props.href}>{props.text}</a>;
+  return (
+    <a href={props.href} className={styles.link}>
+      {props.text}
+    </a>
+  );
 }
 
 Link.propTypes = {

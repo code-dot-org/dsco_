@@ -1,0 +1,5 @@
+@use '@dsco_/common/tokens';
+
+.link {
+  color: tokens.$dsco-primary;
+}
