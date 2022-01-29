@@ -54,6 +54,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
+    "@dsco_/common": "file:packages/common",
     "@dsco_/link": "file:packages/link"
   }
 }
