@@ -1,0 +1,21 @@
+{
+  "name": "@dsco_/common",
+  "version": "1.0.0",
+  "description": "Common styles and utilities for DSCO consumers",
+  "author": "Madelyn Kasula <maddie.kasula@code.org>",
+  "homepage": "https://github.com/code-dot-org/dsco_/tree/main/packages/common#readme",
+  "license": "MIT",
+  "exports": {
+    "./tokens": "./styles/_tokens.scss"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-dot-org/dsco_.git"
+  },
+  "bugs": {
+    "url": "https://github.com/code-dot-org/dsco_/issues"
+  }
+}
