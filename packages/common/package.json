@@ -6,6 +6,7 @@
   "homepage": "https://github.com/code-dot-org/dsco_/tree/main/packages/common#readme",
   "license": "MIT",
   "exports": {
+    "./styles": "./styles/_styles.scss",
     "./tokens": "./styles/_tokens.scss"
   },
   "publishConfig": {

@@ -1,3 +1,7 @@
 @use './colors';
 
-$dsco-primary: colors.$teal;
+// Font tokens
+$dsco-font-color: colors.$charcoal;
+
+// Link tokens
+$dsco-link-color: colors.$teal;

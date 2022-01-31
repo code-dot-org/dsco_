@@ -1,0 +1,11 @@
+@use './tokens';
+
+.dsco-text {
+  color: tokens.$dsco-font-color;
+}
+
+.dsco-link {
+  @extend .dsco-text;
+
+  color: tokens.$dsco-link-color;
+}
