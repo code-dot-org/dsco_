@@ -32,7 +32,7 @@ Creating a component that should be in a new package is more involved. Make sure
 
 ### Adding Another `@dsco_` Package as a Dependency
 
-1. If not already present, make sure the package you'll depend on is linked in the root `package.json` like this:
+1. If not already present, make sure the package you'll depend on is linked in the root `package.json` as a dependency like this:
 
 ```json
 "@dsco_/<name>": "file:packages/<name>"
