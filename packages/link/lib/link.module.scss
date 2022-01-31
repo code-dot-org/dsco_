@@ -1,5 +1,5 @@
-@use '@dsco_/common/tokens';
+@use '@dsco_/common/styles';
 
 .link {
-  color: tokens.$dsco-primary;
+  @extend .dsco-link;
 }
