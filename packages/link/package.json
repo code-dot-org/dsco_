@@ -28,7 +28,7 @@
     "url": "https://github.com/code-dot-org/dsco_/issues"
   },
   "dependencies": {
-    "@dsco_/common": "^1.0.0",
+    "@dsco_/common": "^0.0.1",
     "prop-types": "^15.8.1"
   },
   "peerDependencies": {
