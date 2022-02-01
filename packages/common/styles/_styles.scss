@@ -5,9 +5,3 @@
   font-size: $dsco-font-size;
   line-height: 1.43;
 }
-
-.dsco-link {
-  @extend .dsco-text;
-
-  color: $dsco-link-color;
-}
