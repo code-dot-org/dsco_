@@ -5,6 +5,7 @@
   "author": "Madelyn Kasula <maddie.kasula@code.org>",
   "homepage": "https://github.com/code-dot-org/dsco_/tree/main/packages/common#readme",
   "license": "MIT",
+  "main": "./styles/_styles.scss",
   "exports": {
     "./styles": "./styles/_styles.scss",
     "./tokens": "./styles/_tokens.scss"
