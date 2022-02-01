@@ -13,7 +13,8 @@ Run `npm run storybook` from the root directory to start storybook locally.
 
 ## Publishing
 
-Run `npm run publish` from the root directory to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
+1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username).
+2. Run `npm run publish` from the root directory to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
 
 **Tips:**
 
