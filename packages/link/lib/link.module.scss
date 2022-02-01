@@ -1,0 +1,8 @@
+@use '@dsco_/common/styles';
+@use '@dsco_/common/tokens';
+
+.link {
+  @extend .dsco-text;
+
+  color: tokens.$dsco-link-color;
+}

@@ -30,6 +30,18 @@ Creating a component that should be in a new package is more involved. Make sure
 4. Add any dependencies to your component with [`lerna add`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use `--scope` to only add those dependencies to the necessary package.
 5. Now you can start creating your component, writing tests (after renaming the default test file) and Storybook stories, and documenting your component!
 
+### Adding Another `@dsco_` Package as a Dependency
+
+1. If not already present, make sure the package you'll depend on is linked in the root `package.json` as a dependency like this:
+
+```json
+"@dsco_/<name>": "file:packages/<name>"
+```
+
+2. `npm install` from the root directory.
+3. [`lerna add @dsco_/<name>`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use the `--scope` flag to only add this dependency to the desired package(s).
+4. `npm run build` from the root directory to make sure everything is properly linked.
+
 ### Testing/Installing an Unpublished Package
 
 If want to test your package before publishing it to NPM, here are the steps to do so:
