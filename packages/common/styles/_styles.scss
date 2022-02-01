@@ -1,13 +1,13 @@
-@use './tokens';
+@import './tokens';
 
 .dsco-text {
-  color: tokens.$dsco-font-color;
-  font-size: tokens.$dsco-font-size;
+  color: $dsco-font-color;
+  font-size: $dsco-font-size;
   line-height: 20px;
 }
 
 .dsco-link {
   @extend .dsco-text;
 
-  color: tokens.$dsco-link-color;
+  color: $dsco-link-color;
 }

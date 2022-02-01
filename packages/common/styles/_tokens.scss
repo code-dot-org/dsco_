@@ -1,8 +1,8 @@
-@use './colors';
+@import './colors';
 
 // Font tokens
-$dsco-font-color: colors.$charcoal;
+$dsco-font-color: $dsco-charcoal;
 $dsco-font-size: 14px;
 
 // Link tokens
-$dsco-link-color: colors.$teal;
+$dsco-link-color: $dsco-teal;
