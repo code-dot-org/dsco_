@@ -11,6 +11,15 @@ This repository translates our design system to code and publishes the correspon
 
 Run `npm run storybook` from the root directory to start storybook locally.
 
+## Publishing
+
+Run `npm run publish` from the root directory to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
+
+**Tips:**
+
+- Our publish script uses [`lerna publish`](https://github.com/lerna/lerna/tree/main/commands/publish#readme).
+- We use `--conventional-commits`, so Lerna will automatically detect what versions should be published based on commit messages.
+
 ## Creating a New Component
 
 Creating a new component may or may not involve creating a new package for that component. For example, if `@dsco_/form` exists and you're creating a component that belongs in a form, you should add that component to the existing package (don't forget to add tests and stories!).
