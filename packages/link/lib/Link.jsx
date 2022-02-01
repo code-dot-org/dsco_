@@ -10,6 +10,8 @@ export default function Link(props) {
   );
 }
 
+Link.displayName = 'Link';
+
 Link.propTypes = {
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
