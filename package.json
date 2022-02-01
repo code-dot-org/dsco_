@@ -14,6 +14,8 @@
     "build:prod": "NODE_ENV=production lerna run build",
     "build-storybook": "build-storybook",
     "postinstall": "husky install",
+    "preversion": "npm run build:prod",
+    "publish": "lerna publish --conventional-commits",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
