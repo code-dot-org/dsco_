@@ -1,7 +1,7 @@
 @import './colors';
 
 // Font tokens
-$dsco-font-color: $dsco-charcoal;
+// $dsco-font-color: $dsco-charcoal;
 $dsco-font-size: 14px;
 
 // Link tokens
@@ -25,3 +25,14 @@ $dsco-info-muted: $dsco-blue-2;
 
 $dsco-warn-primary: $dsco-gold;
 $dsco-warn-muted: $dsco-gold-2;
+
+$themes: (
+    day: (
+        font-color: $dsco-charcoal,
+        background-color: white,
+    ),
+    night: (
+        font-color: white,
+        background-color: $dsco-charcoal,
+    )
+);

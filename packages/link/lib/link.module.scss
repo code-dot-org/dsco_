@@ -1,6 +1,21 @@
 @use '@dsco_/common/styles';
 @use '@dsco_/common/tokens';
 
+// The upshot to using themify on global styles is that now the css module
+// doesn't need to think about theming. Now the following HTML:
+//  <a class="link" theme="night>I am night themed.</a> will render in white.
+// I believe the generated "link" css rules will look like this:
+// .link[theme="day"] {
+//    font-color: #4d575f;
+//    font-size: 14px;
+//    line-height: 1.43;
+// }
+// .link[theme="night"] {
+//    font-color: white;
+//    font-size: 14px;
+//    line-height: 1.43;
+// }
+
 .link {
   @extend .dsco-text;
 

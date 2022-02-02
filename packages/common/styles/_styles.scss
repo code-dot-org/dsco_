@@ -1,7 +1,12 @@
+@import './themify';
 @import './tokens';
 
 .dsco-text {
-  color: $dsco-font-color;
+  // Global styles must be themed using themify
+  @include themify {
+    color: themed('font-color')
+  }
+
   font-size: $dsco-font-size;
   line-height: 1.43;
 }
