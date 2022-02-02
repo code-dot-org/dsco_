@@ -11,10 +11,20 @@ This repository translates our design system to code and publishes the correspon
 
 Run `npm run storybook` from the root directory to start storybook locally.
 
+### Deploying to GitHub Pages
+
+This should happen after every publish so that our Storybook documentation accurately reflects the most recent consumable versions of our components.
+
+1. Make sure you're on the default repository branch with no uncommitted changes. You'll be committing/pushing directly to that branch to deploy the updated Storybook documentation to GitHub Pages.
+2. `npm run storybook:build` from the root directory.
+3. Commit the updated `docs/` files.
+4. Push to origin to automatically deploy to GitHub Pages.
+
 ## Publishing
 
 1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username).
 2. Run `npm run publish` from the root directory to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
+3. [Deploy the newly-published components to GitHub Pages](#deploying-to-github-pages).
 
 **Tips:**
 
