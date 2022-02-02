@@ -16,7 +16,7 @@
     "preversion": "npm run build:prod",
     "publish": "lerna publish --conventional-commits",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook --output-dir ./docs"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
