@@ -16,7 +16,8 @@
     "postinstall": "husky install",
     "preversion": "npm run build:prod",
     "publish": "lerna publish --conventional-commits",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
@@ -64,5 +65,14 @@
   "dependencies": {
     "@dsco_/common": "file:packages/common",
     "@dsco_/link": "file:packages/link"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.scss$": "identity-obj-proxy"
+    }
   }
 }
