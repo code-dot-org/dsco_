@@ -12,11 +12,11 @@
     "bootstrap": "lerna bootstrap",
     "build": "NODE_ENV=development lerna run build",
     "build:prod": "NODE_ENV=production lerna run build",
-    "build-storybook": "build-storybook",
     "postinstall": "husky install",
     "preversion": "npm run build:prod",
     "publish": "lerna publish --conventional-commits",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
