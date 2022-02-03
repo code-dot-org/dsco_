@@ -12,13 +12,13 @@
     "bootstrap": "lerna bootstrap",
     "build": "NODE_ENV=development lerna run build",
     "build:prod": "NODE_ENV=production lerna run build",
-    "build-storybook": "build-storybook",
     "lint": "npx eslint --ext js,jsx .",
     "postinstall": "husky install",
     "prettier": "npx pretty-quick --staged",
     "preversion": "npm run build:prod && npm run test",
     "publish": "lerna publish --conventional-commits",
     "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook --output-dir ./docs",
     "test": "jest"
   },
   "devDependencies": {

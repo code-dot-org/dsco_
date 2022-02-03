@@ -11,6 +11,15 @@ This repository translates our design system to code and publishes the correspon
 
 Run `npm run storybook` from the root directory to start storybook locally.
 
+### Deploying to GitHub Pages
+
+This should happen after every publish so that our Storybook documentation accurately reflects the most recent consumable versions of our components.
+
+1. Make sure you're on the default repository branch with no uncommitted changes. You'll be committing/pushing directly to that branch to deploy the updated Storybook documentation to GitHub Pages.
+2. `npm run storybook:build` from the root directory.
+3. Commit the updated `docs/` files.
+4. Push to origin to automatically deploy to GitHub Pages.
+
 ## Testing
 
 Run `npm run test` from the root directory to run the entire suite. `npm run test <path>` will run tests within a specific directory.
@@ -19,6 +28,7 @@ Run `npm run test` from the root directory to run the entire suite. `npm run tes
 
 1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username).
 2. Run `npm run publish` from the root directory to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
+3. [Deploy the newly-published components to GitHub Pages](#deploying-to-github-pages).
 
 **Tips:**
 
@@ -122,6 +132,7 @@ For managing common `devDependencies` (like React), see [this guide from Lerna](
 
 - [lerna](https://github.com/lerna/lerna) for publishing many NPM packages from a monorepo.
 - [storybook](https://storybook.js.org/docs/react/get-started/introduction) for documenting components.
+- [Github Pages](https://pages.github.com/) for hosting our Storybook documentation.
 - [commitlint](https://commitlint.js.org) enforces commit linting. Currently set up to enforce the [Conventional Commits](https://www.conventionalcommits.org) specification.
 - [husky](https://typicode.github.io/husky) for git hooks.
 - [prettier](https://prettier.io) for code formatting. It's best to [configure your editor](https://prettier.io/docs/en/editors.html) to run prettier on save, but it will also auto-format before committing.
