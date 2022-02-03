@@ -11,6 +11,10 @@ This repository translates our design system to code and publishes the correspon
 
 Run `npm run storybook` from the root directory to start storybook locally.
 
+## Testing
+
+Run `npm run test` from the root directory to run the entire suite. `npm run test <path>` will run tests within a specific directory.
+
 ## Publishing
 
 1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username).
@@ -122,3 +126,4 @@ For managing common `devDependencies` (like React), see [this guide from Lerna](
 - [husky](https://typicode.github.io/husky) for git hooks.
 - [prettier](https://prettier.io) for code formatting. It's best to [configure your editor](https://prettier.io/docs/en/editors.html) to run prettier on save, but it will also auto-format before committing.
 - [eslint](https://eslint.org) for consistency and finding possible code problems. It's best to [configure your editor](https://eslint.org/docs/user-guide/integrations) to run eslint, but it will also run (will not auto-fix) before committing.
+- [jest](https://jestjs.io/) for test harnessing and [testing library](https://testing-library.com/) for React testing utilities.
