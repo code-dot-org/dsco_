@@ -2,9 +2,9 @@
 . "$(dirname "$0")/_/husky.sh"
 
 echo "Running prettier..."
-npx pretty-quick --staged
+npm run prettier
 echo "\n"
 
 echo "Running eslint..."
-npx eslint --ext js,jsx .
+npm run lint
 echo "\n"
