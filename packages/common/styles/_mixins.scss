@@ -1,0 +1,49 @@
+@import './tokens';
+
+// Font fallbacks
+// Do not use outside this file - these are temporary.
+// TODO: Remove these fallbacks and their usages once fonts
+// are being served remotely:
+// https://codedotorg.atlassian.net/browse/DSCO-7
+$dsco-fallback-normal: $dsco-font-family, 'Gotham 4r', sans-serif;
+$dsco-fallback-normal-italic: $dsco-font-family, 'Gotham 4i', sans-serif;
+$dsco-fallback-bold: $dsco-font-family, 'Gotham 5r', sans-serif;
+$dsco-fallback-bold-italic: $dsco-font-family, 'Gotham 5i', sans-serif;
+$dsco-fallback-bolder: $dsco-font-family, 'Gotham 7r', sans-serif;
+$dsco-fallback-bolder-italic: $dsco-font-family, 'Gotham 7i', sans-serif;
+
+@mixin font-normal {
+  font-family: $dsco-fallback-normal;
+  font-weight: $dsco-font-weight-normal;
+  font-style: normal;
+}
+
+@mixin font-normal-italic {
+  @include font-normal;
+  font-family: $dsco-fallback-normal-italic;
+  font-style: italic;
+}
+
+@mixin font-bold {
+  font-family: $dsco-fallback-bold;
+  font-weight: $dsco-font-weight-bold;
+  font-style: normal;
+}
+
+@mixin font-bold-italic {
+  @include font-bold;
+  font-family: $dsco-fallback-bold-italic;
+  font-style: italic;
+}
+
+@mixin font-bolder {
+  font-family: $dsco-fallback-bolder;
+  font-weight: $dsco-font-weight-bolder;
+  font-style: normal;
+}
+
+@mixin font-bolder-italic {
+  @include font-bolder;
+  font-family: $dsco-fallback-bolder-italic;
+  font-style: italic;
+}
