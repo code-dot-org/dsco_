@@ -1,6 +1,8 @@
 @import './tokens';
+@import './mixins';
 
 .dsco-text {
+  @include font-normal;
   color: $dsco-font-color;
   font-size: $dsco-font-size;
   line-height: 1.43;

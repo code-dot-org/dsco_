@@ -1,8 +1,25 @@
 @import './colors';
 
-// Font tokens
+// Font-face and weights
+// Weights:
+//   100-300 - unused to leave room for lighter font; falls back to normal
+//   400-500 - normal
+//   600-700 - bold
+//   800-900 - bolder
+$dsco-font-weight-normal: 400;
+$dsco-font-weight-bold: 600;
+$dsco-font-weight-bolder: 800;
+
+$dsco-font-face-normal: 400 500;
+$dsco-font-face-bold: 600 700;
+$dsco-font-face-bolder: 800 900;
+
+// Font
+// Use font mixins to set all font properties and fallbacks.
+$dsco-font-family-default: 'Gotham';
+
 $dsco-font-color: $dsco-charcoal;
 $dsco-font-size: 14px;
 
-// Link tokens
+// Link
 $dsco-link-color: $dsco-teal;
