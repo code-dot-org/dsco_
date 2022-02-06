@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '../lib/Link';
 
 export default {
+  argTypes: {onClick: {action: 'onClick'}},
   title: 'Link',
 };
 
