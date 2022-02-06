@@ -5,13 +5,17 @@ import Link, {linkPropTypes} from './Link';
 import * as styles from './text-link.module.scss';
 
 export default function TextLink({icon, iconBefore, text, ...linkProps}) {
+  if (icon) {
+    icon = React.cloneElement(icon, {key: 'icon'});
+  }
+
   return (
     <Link
       {...linkProps}
       className={classnames(styles.link, linkProps.className)}
     >
       {iconBefore && icon}
-      {text && <span>{text}</span>}
+      {text && <span key="text">{text}</span>}
       {!iconBefore && icon}
     </Link>
   );
