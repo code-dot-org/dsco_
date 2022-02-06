@@ -24,10 +24,10 @@ a.link {
   }
 
   &.medium {
-    @include mixins.font-bold;
+    @include mixins.font-medium;
   }
 
   &.bold {
-    @include mixins.font-bolder;
+    @include mixins.font-bold;
   }
 }
