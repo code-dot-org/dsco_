@@ -7,6 +7,7 @@
   "license": "MIT",
   "main": "./styles/_styles.scss",
   "exports": {
+    "./mixins": "./styles/_mixins.scss",
     "./styles": "./styles/_styles.scss",
     "./tokens": "./styles/_tokens.scss"
   },
