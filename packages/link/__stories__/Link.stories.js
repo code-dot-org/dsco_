@@ -5,10 +5,13 @@ export default {
   title: 'Link',
 };
 
-const Template = (args) => <Link {...args} />;
+const Template = (args) => <Link {...args}>{args.children}</Link>;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  href: '/some/url',
-  text: 'click me!',
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Go to Code Studio',
+  external: false,
+  href: 'https://studio.code.org',
+  openInNewTab: true,
+  weight: 'regular',
 };
