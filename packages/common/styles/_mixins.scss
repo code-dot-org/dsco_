@@ -1,37 +1,37 @@
 @import './tokens';
 
-@mixin font-normal {
+@mixin font-regular {
   font-family: $dsco-font-family-default, 'Gotham 4r', sans-serif;
-  font-weight: $dsco-font-weight-normal;
+  font-weight: $dsco-font-weight-regular;
   font-style: normal;
 }
 
-@mixin font-normal-italic {
-  @include font-normal;
+@mixin font-regular-italic {
+  @include font-regular;
   font-family: $dsco-font-family-default, 'Gotham 4i', sans-serif;
   font-style: italic;
 }
 
-@mixin font-bold {
+@mixin font-medium {
   font-family: $dsco-font-family-default, 'Gotham 5r', sans-serif;
+  font-weight: $dsco-font-weight-medium;
+  font-style: normal;
+}
+
+@mixin font-medium-italic {
+  @include font-medium;
+  font-family: $dsco-font-family-default, 'Gotham 5i', sans-serif;
+  font-style: italic;
+}
+
+@mixin font-bold {
+  font-family: $dsco-font-family-default, 'Gotham 7r', sans-serif;
   font-weight: $dsco-font-weight-bold;
   font-style: normal;
 }
 
 @mixin font-bold-italic {
   @include font-bold;
-  font-family: $dsco-font-family-default, 'Gotham 5i', sans-serif;
-  font-style: italic;
-}
-
-@mixin font-bolder {
-  font-family: $dsco-font-family-default, 'Gotham 7r', sans-serif;
-  font-weight: $dsco-font-weight-bolder;
-  font-style: normal;
-}
-
-@mixin font-bolder-italic {
-  @include font-bolder;
   font-family: $dsco-font-family-default, 'Gotham 7i', sans-serif;
   font-style: italic;
 }

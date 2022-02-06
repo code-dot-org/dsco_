@@ -3,16 +3,16 @@
 // Font-face and weights
 // Weights:
 //   100-300 - unused to leave room for lighter font; falls back to normal
-//   400-500 - normal
-//   600-700 - bold
-//   800-900 - bolder
-$dsco-font-weight-normal: 400;
-$dsco-font-weight-bold: 600;
-$dsco-font-weight-bolder: 800;
+//   400-500 - regular
+//   600-700 - medium
+//   800-900 - bold
+$dsco-font-weight-regular: 400;
+$dsco-font-weight-medium: 600;
+$dsco-font-weight-bold: 800;
 
-$dsco-font-face-normal: 400 500;
-$dsco-font-face-bold: 600 700;
-$dsco-font-face-bolder: 800 900;
+$dsco-font-face-regular: 400 500;
+$dsco-font-face-medium: 600 700;
+$dsco-font-face-bold: 800 900;
 
 // Font
 // Use font mixins to set all font properties and fallbacks.
