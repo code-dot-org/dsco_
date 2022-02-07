@@ -77,5 +77,8 @@
     "moduleNameMapper": {
       "\\.scss$": "identity-obj-proxy"
     }
+  },
+  "engines": {
+    "npm": "^6.14.13"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@dsco_/link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Link component",
   "author": "Madelyn Kasula <maddie.kasula@code.org>",
   "homepage": "https://github.com/code-dot-org/dsco_/tree/main/packages/link#readme",
@@ -28,7 +28,7 @@
     "url": "https://github.com/code-dot-org/dsco_/issues"
   },
   "dependencies": {
-    "@dsco_/common": "^0.0.2",
+    "@dsco_/common": "^0.1.0",
     "classnames": "^2.3.1",
     "prop-types": "^15.8.1"
   },
