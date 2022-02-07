@@ -20,7 +20,7 @@ export default function Link({
       id={id}
       onClick={onClick}
       target={openInNewTab ? '_blank' : undefined}
-      rel={openInNewTab && external ? 'noopener noreferrer' : undefined}
+      rel={external ? 'noopener noreferrer' : undefined}
     >
       {children}
     </a>
