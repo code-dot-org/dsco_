@@ -61,6 +61,10 @@ feat(link): always open external links in a new tab
 2. `npm install`
 3. [Start Storybook](#storybook) to begin developing components locally.
 
+**Tips:**
+
+- If you need to run a command on a package (or all packages), you'll almost always use a Lerna command, not NPM, so you should familiarize yourself with [Lerna](https://github.com/lerna/lerna) and its basic commands.
+
 ## Storybook
 
 Run `npm run storybook` from the root directory to start storybook locally.
