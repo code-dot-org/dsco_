@@ -5,4 +5,9 @@
   @extend .dsco-text;
 
   color: tokens.$dsco-link-color;
+  text-decoration: none;
+}
+
+.link-underline {
+  text-decoration: underline !important;
 }

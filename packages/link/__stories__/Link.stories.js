@@ -11,4 +11,5 @@ export const Primary = Template.bind({});
 Primary.args = {
   href: '/some/url',
   text: 'click me!',
+  underline: true,
 };
