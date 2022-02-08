@@ -1,5 +1,27 @@
 # Contributing to DSCO
 
+<details>
+  <summary>Table of Contents</summary>
+
+- [Contributing to DSCO](#contributing-to-dsco)
+  - [Setup](#setup)
+  - [Storybook](#storybook)
+    - [Deploying to GitHub Pages](#deploying-to-github-pages)
+  - [Testing](#testing)
+  - [Publishing](#publishing)
+  - [Creating a New Component](#creating-a-new-component)
+    - [Adding Another `@dsco_` Package as a Dependency](#adding-another-dsco_-package-as-a-dependency)
+    - [Testing/Installing an Unpublished Package](#testinginstalling-an-unpublished-package)
+  - [Developing a Package Locally Within a Consuming Application](#developing-a-package-locally-within-a-consuming-application)
+  - [Styleguides](#styleguides)
+    - [JavaScript](#javascript)
+    - [SCSS](#scss)
+    - [Packages](#packages)
+  - [Managing Common Dependencies](#managing-common-dependencies)
+  - [Resources](#resources)
+    - [Tools](#tools)
+    </details>
+
 ## Setup
 
 1. Clone this repository and navigate to the root directory.
