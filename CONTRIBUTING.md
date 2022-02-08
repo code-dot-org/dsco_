@@ -32,7 +32,7 @@ To contribute code to this repository, you will almost always make a pull reques
 
 Before your first contribution, make sure to read through this file and familiarize yourself with [our tools](#tools) and [styleguides](#styleguides). Then you can...
 
-1. Make a local branch from the default branch and make some changes.
+1. Make a local branch off of the default branch and make some changes.
 2. When you're ready to commit, your commit messages must follow [conventional commits](https://www.conventionalcommits.org). **This is the most important part of the process!** Lerna uses our commit messages to decide the next version numbers and changelog content when we publish packages ([see more details from Lerna](https://github.com/lerna/lerna/blob/main/commands/version/README.md#--conventional-commits)). There is pre-commit linting set up to help you, but here are some additional tips that linting can't help with:
 
    - The `type` (e.g., `fix`, `feat`, `chore`) decides the version number for the next publish, so if you label a commit with a breaking API update as `feat`, the next version will be a minor bump instead of a major bump.
