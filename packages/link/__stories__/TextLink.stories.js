@@ -1,18 +1,20 @@
 import React from 'react';
-import Link from '../lib/Link';
+import TextLink from '../lib/TextLink';
 
 export default {
   argTypes: {onClick: {action: 'onClick'}},
-  title: 'Link',
+  title: 'TextLink',
 };
 
-const Template = (args) => <Link {...args}>{args.children}</Link>;
+const Template = (args) => <TextLink {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Go to Code Studio',
-  external: false,
+  external: true,
   href: 'https://studio.code.org',
+  icon: <i className="fa fa-external-link-alt" />,
+  iconBefore: false,
   openInNewTab: true,
+  text: 'Open Code Studio',
   weight: 'regular',
 };
