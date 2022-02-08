@@ -33,17 +33,26 @@ To contribute code to this repository, you will almost always make a pull reques
 Before your first contribution, make sure to read through this file and familiarize yourself with [our tools](#tools) and [styleguides](#styleguides). Then you can...
 
 1. Make a local branch from the default branch and make some changes.
-2. When you're ready to commit, your commit messages must follow [conventional commits](https://www.conventionalcommits.org). **This is the most important part of the process!** Lerna uses our commit messages to decide the next version numbers and changelog content when we publish packages ([see more details from Lerna](https://github.com/lerna/lerna/blob/main/commands/version/README.md#--conventional-commits)). There is commit linting set up to help you, but here are some additional tips that linting can't help with:
+2. When you're ready to commit, your commit messages must follow [conventional commits](https://www.conventionalcommits.org). **This is the most important part of the process!** Lerna uses our commit messages to decide the next version numbers and changelog content when we publish packages ([see more details from Lerna](https://github.com/lerna/lerna/blob/main/commands/version/README.md#--conventional-commits)). There is pre-commit linting set up to help you, but here are some additional tips that linting can't help with:
 
-   - The `type` (e.g., `fix`, `feat`, `chore`) decides the version number for the next publish, so if you label a commit with a breaking API update as `feat`, the next version might be a minor bump instead of a major bump.
+   - The `type` (e.g., `fix`, `feat`, `chore`) decides the version number for the next publish, so if you label a commit with a breaking API update as `feat`, the next version will be a minor bump instead of a major bump.
    - Always add the `scope` to your commit message -- each package is a "scope". Example: `feat(common): add color tokens` ensures this commit will make it into the next changelog for the `@dsco_/common` package and the next version will be a minor version bump.
    - It's generally best to commit to a single package at a time (e.g., a commit should only change files in 1 package, not many). It will keep changelogs clear and concise.
    - `chore` commits do not appear in changelogs, so these are best for commits like "adds tests" or "adds stories" that don't really need to be in the package's changelog.
+   - [See examples here](https://www.conventionalcommits.org/en/v1.0.0/#examples). Additional examples that are specific to this repository:
+
+```
+# A commit that doesn't belong to a package (i.e., no changes are in packages/ files)
+chore(root): add contributing guidelines
+
+# A commit that adds a new feature to the @dsco_/link package
+feat(link): always open external links in a new tab
+```
 
 3. Push your branch and make a pull request. Make sure your PR description describes the change and why you're making it, has necessary screenshots/videos, and links to any Jira tasks or issues.
-4. A review request will automatically be requested by our repository code owners, but you can add additional reviewers that may be necessary.
-5. GitHub actions will run.
-6. Once you have approval from at least 1 reviewer and GitHub checks have completed successfully, you're ready to merge!
+   - A review request will automatically be requested by the repository code owners, but you can add additional reviewers.
+   - GitHub actions will run.
+4. Once you have approval from at least 1 reviewer and GitHub checks have completed successfully, you're ready to merge!
 
 ## Setup
 
