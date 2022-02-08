@@ -1,8 +1,10 @@
 import React from 'react';
+import Link from '../lib/Link';
 import TextLink from '../lib/TextLink';
 
 export default {
-  argTypes: {onClick: {action: 'onClick'}},
+  component: TextLink,
+  subcomponents: {Link},
   title: 'TextLink',
 };
 
@@ -10,11 +12,19 @@ const Template = (args) => <TextLink {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  external: true,
   href: 'https://studio.code.org',
   icon: <i className="fa fa-external-link-alt" />,
-  iconBefore: false,
-  openInNewTab: true,
   text: 'Open Code Studio',
-  weight: 'regular',
+};
+
+export const IconOnly = Template.bind({});
+IconOnly.args = {
+  ...Default.args,
+  text: undefined,
+};
+
+export const TextOnly = Template.bind({});
+TextOnly.args = {
+  ...Default.args,
+  icon: undefined,
 };
