@@ -91,7 +91,8 @@ Now you can create your component, write tests (after renaming the default test 
 
 If want to test your package before publishing it to NPM, here are the steps to do so:
 
-1. From the root directory, run `npm run build` (for a development build) or `npm run build:prod` (for a production build). **Note:** Testing in Code Studio will only work with a production build.
+1. From the root directory, run `npm run build` (for a development build) or `npm run build:prod` (for a production build).
+   - **Note:** Testing in Code Studio will only work with a production build.
 2. Navigate to the package root (the directory where that package's `package.json` lives).
 3. Run [`npm pack`](https://docs.npmjs.com/cli/v7/commands/npm-pack), which will create a `.tgz` package in the current directory. (Make sure you don't accidentally commit this later.)
 4. Add this local package to the consuming application's `package.json` file by referencing the path to your `.tgz` instead of a version number. It should look something like this:
@@ -106,9 +107,11 @@ If want to test your package before publishing it to NPM, here are the steps to 
 
 1. Install the relevant package in the consuming application if it isn't already installed.
    - For unpublished packages, you need to go through [these installation steps](#testinginstalling-an-unpublished-package).
-2. Navigate to the package's root directory and run [`npm link`](https://docs.npmjs.com/cli/v8/commands/npm-link). **Note:** This will create a `package-lock.json` for the package; don't commit it -- Lerna manages our dependencies, but NPM will create the lockfile by default.
+2. Navigate to the package's root directory and run [`npm link`](https://docs.npmjs.com/cli/v8/commands/npm-link).
+   - **Note:** This will create a `package-lock.json` for the package; don't commit it -- Lerna manages our dependencies, but NPM will create the lockfile by default.
 3. From the consuming application, navigate to the `package.json` directory and run `npm link <package>`.
-4. Now you can make changes to your package and see them in the consuming application. You have to rebuild (`npm run build` or `npm run build:prod` from the root of this repository) anytime you make a change in order to see that change reflected in the consuming app because the consumer looks at your package's `dist/` output. **Note:** Testing in Code Studio will only work with a production build.
+4. Now you can make changes to your package and see them in the consuming application. You have to rebuild (`npm run build` or `npm run build:prod` from the root of this repository) anytime you make a change in order to see that change reflected in the consuming app because the consumer looks at your package's `dist/` output.
+   - **Note:** Testing in Code Studio will only work with a production build.
 
 ## Styleguides
 
