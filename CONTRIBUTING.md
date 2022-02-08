@@ -59,6 +59,7 @@ feat(link): always open external links in a new tab
 
 1. Clone this repository and navigate to the root directory.
 2. `npm install`
+3. [Start Storybook](#storybook) to begin developing components locally.
 
 ## Storybook
 
