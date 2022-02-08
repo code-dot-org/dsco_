@@ -72,6 +72,7 @@ module.exports = {
     'react/jsx-handler-names': 'error',
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
+    'react/jsx-no-target-blank': ['error', {enforceDynamicLinks: 'never'}],
     'react/jsx-pascal-case': 'error',
     'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-tag-spacing': 'error',

@@ -1,0 +1,35 @@
+@use '@dsco_/common/mixins';
+@use '@dsco_/common/tokens';
+
+a.link {
+  display: inline-flex;
+  align-items: center;
+
+  // Use flexbox gap to space children. Fallback to margin if
+  // 'gap' property isn't supported:
+  // https://coryrylan.com/blog/css-gap-space-with-flexbox
+  $gap: tokens.$dsco-gutter;
+  gap: $gap;
+  @supports not (gap: $gap) {
+    $margin-ltr: 0 -#{$gap} 0 0;
+    $margin-rtl: 0 0 0 -#{$gap};
+    @include mixins.rtl(margin, $margin-ltr, $margin-rtl);
+
+    > * {
+      $child-margin-ltr: 0 #{$gap} 0 0;
+      $child-margin-rtl: 0 0 0 #{$gap};
+      @include mixins.rtl(margin, $child-margin-ltr, $child-margin-rtl);
+    }
+  }
+
+  // Remove text-decoration from child icon on hover.
+  & > i:before {
+    display: inline-block;
+  }
+  &:active,
+  &:hover {
+    & > i:before {
+      text-decoration: none;
+    }
+  }
+}

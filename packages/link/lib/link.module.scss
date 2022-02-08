@@ -1,8 +1,33 @@
+@use '@dsco_/common/mixins';
 @use '@dsco_/common/styles';
 @use '@dsco_/common/tokens';
 
-.link {
+@mixin link-text {
   @extend .dsco-text;
-
   color: tokens.$dsco-link-color;
+}
+
+a.link {
+  @include link-text;
+  &:active,
+  &:focus,
+  &:hover,
+  &:link,
+  &:visited {
+    @include link-text;
+  }
+
+  text-decoration: none;
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.medium {
+    @include mixins.font-medium;
+  }
+
+  &.bold {
+    @include mixins.font-bold;
+  }
 }
