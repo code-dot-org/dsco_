@@ -26,9 +26,9 @@ Run `npm run test` from the root directory to run the entire suite. `npm run tes
 
 ## Publishing
 
-1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username).
+1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username). If you aren't a member, the dev-code-org NPM account (credentials in LastPass) has the proper permissions to invite members to `@dsco_`.
 2. Run `npm run publish` **from the root directory on the default branch** to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
-3. [Deploy the newly-published components to GitHub Pages](#deploying-to-github-pages).
+3. [Deploy the newly-published components to Storybook](#deploying-to-github-pages).
 
 **Tips:**
 
@@ -52,7 +52,8 @@ Creating a component that should be in a new package is more involved. Make sure
 ```
 
 4. Add any dependencies to your component with [`lerna add`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use `--scope` to only add those dependencies to the necessary package.
-5. Now you can start creating your component, writing tests (after renaming the default test file) and Storybook stories, and documenting your component!
+
+Now you can create your component, write tests (after renaming the default test file) and Storybook stories, and document your component!
 
 ### Adding Another `@dsco_` Package as a Dependency
 
@@ -70,7 +71,7 @@ Creating a component that should be in a new package is more involved. Make sure
 
 If want to test your package before publishing it to NPM, here are the steps to do so:
 
-1. From the root directory, run `npm run build` (for a development build) or `npm run build:prod` (for a production build).
+1. From the root directory, run `npm run build` (for a development build) or `npm run build:prod` (for a production build). **Note:** Testing in Code Studio will only work with a production build.
 2. Navigate to the package root (the directory where that package's `package.json` lives).
 3. Run [`npm pack`](https://docs.npmjs.com/cli/v7/commands/npm-pack), which will create a `.tgz` package in the current directory. (Make sure you don't accidentally commit this later.)
 4. Add this local package to the consuming application's `package.json` file by referencing the path to your `.tgz` instead of a version number. It should look something like this:
@@ -79,7 +80,15 @@ If want to test your package before publishing it to NPM, here are the steps to 
 "@dsco_/my-component": "file:../dsco_/packages/my-component/dsco_-my-component-1.0.0.tgz"
 ```
 
-5. Run the installation script in the consuming application (via `yarn install`, `npm install`, etc.). Now you can import and consume your local package the same as a published package.
+5. Run the installation script in the consuming application (via `yarn install`, `npm install`, etc.). Now you can import and consume your local package as if it were a published package.
+
+## Developing a Package Locally Within a Consuming Application
+
+1. Install the relevant package in the consuming application if it isn't already installed.
+   - For unpublished packages, you need to go through [these installation steps](#testinginstalling-an-unpublished-package).
+2. Navigate to the package's root directory and run [`npm link`](https://docs.npmjs.com/cli/v8/commands/npm-link). **Note:** This will create a `package-lock.json` for the package; don't commit it -- Lerna manages our dependencies, but NPM will create the lockfile by default.
+3. From the consuming application, navigate to the `package.json` directory and run `npm link <package>`.
+4. Now you can make changes to your package and see them in the consuming application. You have to rebuild (`npm run build` or `npm run build:prod` from the root of this repository) anytime you make a change in order to see that change reflected in the consuming app because the consumer looks at your package's `dist/` output. **Note:** Testing in Code Studio will only work with a production build.
 
 ## Styleguides
 
