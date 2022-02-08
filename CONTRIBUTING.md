@@ -49,10 +49,11 @@ chore(root): add contributing guidelines
 feat(link): always open external links in a new tab
 ```
 
-3. Push your branch and make a pull request. Make sure your PR description describes the change and why you're making it, has necessary screenshots/videos, and links to any Jira tasks or issues.
+3. Add stories for any visual changes and unit tests for any functional changes.
+4. Push your branch and make a pull request. Make sure your PR description describes the change and why you're making it, has necessary screenshots/videos, and links to any Jira tasks or issues.
    - A review request will automatically be requested by the repository code owners, but you can add additional reviewers.
    - GitHub actions will run.
-4. Once you have approval from at least 1 reviewer and GitHub checks have completed successfully, you're ready to merge!
+5. Once you have approval from at least 1 reviewer and GitHub checks have completed successfully, you're ready to merge!
 
 ## Setup
 
