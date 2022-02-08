@@ -31,6 +31,10 @@
 
 Run `npm run storybook` from the root directory to start storybook locally.
 
+**Tips:**
+
+- If you are making changes to multiple packages at once, you may need to rebuild to see those changes across packages.
+
 ### Deploying to GitHub Pages
 
 This should happen after every publish so that our Storybook documentation accurately reflects the most recent consumable versions of our components.
