@@ -89,7 +89,7 @@ Run `npm run test` from the root directory to run the entire suite. `npm run tes
 **Tips:**
 
 - Our publish script uses [`lerna publish`](https://github.com/lerna/lerna/tree/main/commands/publish#readme).
-- We use `--conventional-commits`, so Lerna will automatically detect what versions should be published based on commit messages.
+- We use [`--conventional-commits`](https://github.com/lerna/lerna/blob/main/commands/version/README.md#--conventional-commits), so Lerna will automatically detect what versions should be published based on commit messages.
 
 ## Creating a New Component
 
