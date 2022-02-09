@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Link from './Link';
-import * as styles from './text-link.module.scss';
+import style from './text-link.module.scss';
 
 /**
  * A version of the Link component that styles a hyperlink composed of
@@ -18,7 +18,7 @@ export default function TextLink({icon, iconBefore, text, ...linkProps}) {
   return (
     <Link
       {...linkProps}
-      className={classnames(styles.link, linkProps.className)}
+      className={classnames(style.link, linkProps.className)}
     >
       {iconBefore && icon}
       {text && <span key="text">{text}</span>}

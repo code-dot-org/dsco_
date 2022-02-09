@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import * as styles from './link.module.scss';
+import style from './link.module.scss';
 
 /**
  * A generic hyperlink component that accepts and renders any type of children.
@@ -18,7 +18,7 @@ export default function Link({
 }) {
   return (
     <a
-      className={classnames(styles.link, styles[weight], className)}
+      className={classnames(style.link, style[weight], className)}
       href={href}
       id={id}
       onClick={onClick}
