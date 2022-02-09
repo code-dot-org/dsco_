@@ -26,7 +26,6 @@ module.exports = {
     'import/order': 'error',
     'no-duplicate-imports': 'error',
     'no-implicit-globals': 'error',
-    'no-magic-numbers': 'error',
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
     'no-unneeded-ternary': 'error',
