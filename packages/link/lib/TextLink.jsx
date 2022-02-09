@@ -22,7 +22,7 @@ export default function TextLink({icon, iconBefore, text, ...linkProps}) {
   return (
     <Link
       {...linkProps}
-      className={classnames(style.link, linkProps.className)}
+      className={classnames(style.textlink, linkProps.className)}
     >
       {iconBefore && icon}
       {text && <span key="text">{text}</span>}
