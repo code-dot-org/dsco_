@@ -17,6 +17,12 @@ Default.args = {
   text: 'Open Code Studio',
 };
 
+export const IconBefore = Template.bind({});
+IconBefore.args = {
+  ...Default.args,
+  iconBefore: true,
+};
+
 export const IconOnly = Template.bind({});
 IconOnly.args = {
   ...Default.args,
@@ -27,4 +33,16 @@ export const TextOnly = Template.bind({});
 TextOnly.args = {
   ...Default.args,
   icon: undefined,
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  ...Default.args,
+  weight: 'medium',
+};
+
+export const Bold = Template.bind({});
+Bold.args = {
+  ...Default.args,
+  weight: 'bold',
 };
