@@ -26,7 +26,6 @@ module.exports = {
               esModule: true,
               modules: {
                 auto: true,
-                namedExport: true,
                 localIdentName: 'dsco-[local]-[hash:base64]',
               },
             },
