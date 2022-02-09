@@ -19,7 +19,8 @@
     "publish": "lerna publish --conventional-commits",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook --output-dir ./docs",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
