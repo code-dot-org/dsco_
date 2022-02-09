@@ -32,7 +32,7 @@ export default function Link({
 
 Link.displayName = 'Link';
 
-export const linkPropTypes = {
+Link.propTypes = {
   children: PropTypes.node,
   /** CSS class to be applied after all internal classes */
   className: PropTypes.string,
@@ -48,7 +48,6 @@ export const linkPropTypes = {
   /** Font weight of the link */
   weight: PropTypes.oneOf(['regular', 'medium', 'bold']),
 };
-Link.propTypes = linkPropTypes;
 
 Link.defaultProps = {
   children: undefined,
