@@ -16,8 +16,7 @@ module.exports = {
       ...config,
       module: {
         ...config.module,
-        // Replace default storybook rules with our webpack rules.
-        rules: webpackConfig.module.rules,
+        rules: [...config.module.rules, ...webpackConfig.module.rules],
       },
     };
   },
