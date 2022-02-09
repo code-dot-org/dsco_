@@ -12,7 +12,11 @@ import style from './text-link.module.scss';
  */
 export default function TextLink({icon, iconBefore, text, ...linkProps}) {
   if (icon) {
-    icon = React.cloneElement(icon, {key: 'icon'});
+    icon = React.cloneElement(icon, {
+      // Icons should be hidden from screenreaders if text is available.
+      'aria-hidden': !!text,
+      key: 'icon',
+    });
   }
 
   return (
