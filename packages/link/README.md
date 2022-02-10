@@ -9,7 +9,7 @@ yarn install @dsco_/link
 
 ## Consuming This Package
 
-This package exports two styled React components: [Link](lib/Link.jsx) and [TextLink](lib/Link.jsx). You can import them like this:
+This package exports two styled React components: [Link](lib/Link.jsx) and [TextLink](lib/TextLink.jsx). You can import them like this:
 
 ```javascript
 import {Link, TextLink} from '@dsco_/link';
