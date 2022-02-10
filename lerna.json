@@ -3,7 +3,7 @@
   "version": "independent",
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md", "*.stories.*"],
+      "ignoreChanges": ["*.md", "*.stories.*", "*.test.*"],
       "message": "chore(release): publish"
     }
   },
