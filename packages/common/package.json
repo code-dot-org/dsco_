@@ -9,6 +9,7 @@
   "exports": {
     "./mixins": "./styles/_mixins.scss",
     "./styles": "./styles/_styles.scss",
+    "./themes": "./styles/_themes.scss",
     "./tokens": "./styles/_tokens.scss"
   },
   "publishConfig": {

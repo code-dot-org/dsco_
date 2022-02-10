@@ -10,7 +10,13 @@ import style from './text-link.module.scss';
  *
  * Any props not defined by this component are passed through to the Link component.
  */
-export default function TextLink({icon, iconBefore, text, ...linkProps}) {
+export default function TextLink({
+  icon,
+  iconBefore,
+  text,
+  theme,
+  ...linkProps
+}) {
   if (icon) {
     icon = React.cloneElement(icon, {
       // Icons should be hidden from screenreaders if text is available.
@@ -23,6 +29,7 @@ export default function TextLink({icon, iconBefore, text, ...linkProps}) {
     <Link
       {...linkProps}
       className={classnames(style.textlink, linkProps.className)}
+      theme={theme}
     >
       {iconBefore && icon}
       {text && <span key="text">{text}</span>}
@@ -40,10 +47,12 @@ TextLink.propTypes = {
   /** Render the icon before or after the text? */
   iconBefore: PropTypes.bool,
   text: PropTypes.string,
+  theme: PropTypes.oneOf(['day', 'night']),
 };
 
 TextLink.defaultProps = {
   icon: undefined,
   iconBefore: false,
   text: undefined,
+  theme: 'day',
 };

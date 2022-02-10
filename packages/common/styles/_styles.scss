@@ -1,9 +1,14 @@
 @import './tokens';
+@import './themes';
 @import './mixins';
 
 .dsco-text {
   @include font-regular;
-  color: $dsco-font-color;
+  @include themify {
+    background-color: themed('background-color');
+    color: themed('font-color');
+  }
+
   font-size: $dsco-font-size;
   line-height: 1.43;
 }

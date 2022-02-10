@@ -1,10 +1,13 @@
 @use '@dsco_/common/mixins';
 @use '@dsco_/common/styles';
+@use '@dsco_/common/themes';
 @use '@dsco_/common/tokens';
 
 @mixin link-text {
   @extend .dsco-text;
-  color: tokens.$dsco-link-color;
+  @include themes.themify {
+    color: themes.themed('link-color');
+  }
 }
 
 a.link {

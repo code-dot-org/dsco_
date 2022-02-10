@@ -14,6 +14,7 @@ export default function Link({
   id,
   onClick,
   openInNewTab,
+  theme,
   weight,
 }) {
   return (
@@ -24,6 +25,7 @@ export default function Link({
       onClick={onClick}
       target={openInNewTab ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
+      theme={theme}
     >
       {children}
     </a>
@@ -45,6 +47,7 @@ Link.propTypes = {
   onClick: PropTypes.func,
   /** Should the link open in a new tab? */
   openInNewTab: PropTypes.bool,
+  theme: PropTypes.oneOf(['day', 'night']),
   /** Font weight of the link */
   weight: PropTypes.oneOf(['regular', 'medium', 'bold']),
 };
@@ -56,5 +59,6 @@ Link.defaultProps = {
   id: undefined,
   onClick: () => {},
   openInNewTab: false,
+  theme: 'day',
   weight: 'regular',
 };
