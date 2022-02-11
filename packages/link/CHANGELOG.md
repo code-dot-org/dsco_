@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/code-dot-org/dsco_/compare/@dsco_/link@1.1.1...@dsco_/link@1.1.2) (2022-02-11)
+
+### Bug Fixes
+
+- **link:** remove [@supports](https://github.com/supports) rule for gap due to safari mixed support ([39e0f44](https://github.com/code-dot-org/dsco_/commit/39e0f44f6beec4f47a9752a4c0aa48f78b8ea0b4))
+
 ## [1.1.1](https://github.com/code-dot-org/dsco_/compare/@dsco_/link@1.1.0...@dsco_/link@1.1.1) (2022-02-11)
 
 ### Bug Fixes
