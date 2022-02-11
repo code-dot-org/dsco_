@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/code-dot-org/dsco_/compare/@dsco_/link@1.1.0...@dsco_/link@1.1.1) (2022-02-11)
+
+### Bug Fixes
+
+- **link:** invert [@supports](https://github.com/supports) rule for child spacing ([da9efb9](https://github.com/code-dot-org/dsco_/commit/da9efb9a64f23257b95023e737e4ca56d0d1312b))
+
 # [1.1.0](https://github.com/code-dot-org/dsco_/compare/@dsco_/link@0.1.1...@dsco_/link@1.1.0) (2022-02-10)
 
 ### Bug Fixes
