@@ -90,7 +90,8 @@ Run `npm run test` from the root directory to run the entire suite. `npm run tes
 
 1. Make sure you are a member of the `@dsco_` NPM organization and logged in to that NPM account from the command line (`npm whoami` will tell you your username). If you aren't a member, the dev-code-org NPM account (credentials in LastPass) has the proper permissions to invite members to `@dsco_`.
 2. Run `npm run publish` **from the root directory on the default branch** to autogenerate changelogs and publish all packages that have changed since the last release. You'll be asked to confirm before anything is actually published to NPM.
-3. [Deploy the newly-published components to Storybook](#deploying-to-github-pages).
+3. From the root directory, `npm install`. This will update package versions for internal packages that are symlinked in the root `package-lock.json`. Any changes to that file should be committed and pushed.
+4. [Deploy the newly-published components to Storybook](#deploying-to-github-pages).
 
 **Tips:**
 
