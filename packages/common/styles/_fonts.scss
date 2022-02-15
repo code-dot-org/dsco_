@@ -1,0 +1,43 @@
+@import './tokens';
+
+@font-face {
+  font-family: $dsco-font-family-default;
+  font-weight: $dsco-font-face-regular;
+  font-style: normal;
+  src: url('https://dsco.code.org/assets/fonts/Gotham-Book.otf');
+}
+
+@font-face {
+  font-family: $dsco-font-family-default;
+  font-weight: $dsco-font-face-regular;
+  font-style: italic;
+  src: url('https://dsco.code.org/assets/fonts/Gotham-BookItalic.otf');
+}
+
+@font-face {
+  font-family: $dsco-font-family-default;
+  font-weight: $dsco-font-face-medium;
+  font-style: normal;
+  src: url('https://dsco.code.org/assets/fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: $dsco-font-family-default;
+  font-weight: $dsco-font-face-medium;
+  font-style: italic;
+  src: url('https://dsco.code.org/assets/fonts/Gotham-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: $dsco-font-family-default;
+  font-weight: $dsco-font-face-bold;
+  font-style: normal;
+  src: url('https://dsco.code.org/assets/fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+  font-family: $dsco-font-family-default;
+  font-weight: $dsco-font-face-bold;
+  font-style: italic;
+  src: url('https://dsco.code.org/assets/fonts/Gotham-BoldItalic.otf');
+}
