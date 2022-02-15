@@ -58,8 +58,9 @@ feat(link): always open external links in a new tab
 ## Setup
 
 1. Clone this repository and navigate to the root directory.
-2. `npm install`
-3. [Start Storybook](#storybook) to begin developing components locally.
+2. `npm install --global lerna`. Most lerna commands will have an `npm` script alias, but it's useful to also have lerna installed.
+3. `npm install`
+4. [Start Storybook](#storybook) to begin developing components locally.
 
 **Tips:**
 
