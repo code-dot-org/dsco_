@@ -58,8 +58,9 @@ feat(link): always open external links in a new tab
 ## Setup
 
 1. Clone this repository and navigate to the root directory.
-2. `npm install`
-3. [Start Storybook](#storybook) to begin developing components locally.
+2. `npm install --global lerna`. Most lerna commands will have an `npm` script alias, but it's useful to also have lerna installed.
+3. `npm install`
+4. [Start Storybook](#storybook) to begin developing components locally.
 
 **Tips:**
 
@@ -111,7 +112,9 @@ Creating a component that should be in a new package is more involved. Make sure
 3. Add a "build" script to your new `package.json` file. It should be:
 
 ```json
-"build": "webpack --config ../../webpack.config.js"
+"scripts": {
+  "build": "webpack --config ../../webpack.config.js"
+}
 ```
 
 4. Add any dependencies to your component with [`lerna add`](https://github.com/lerna/lerna/tree/main/commands/add#readme). Make sure to use `--scope` to only add those dependencies to the necessary package.
@@ -151,8 +154,10 @@ If want to test your package before publishing it to NPM, here are the steps to 
 1. Install the relevant package in the consuming application if it isn't already installed.
    - For unpublished packages, you need to go through [these installation steps](#testinginstalling-an-unpublished-package).
 2. Navigate to the package's root directory and run [`npm link`](https://docs.npmjs.com/cli/v8/commands/npm-link).
+   - e.g., `cd packages/link; npm link`
    - **Note:** This will create a `package-lock.json` for the package; don't commit it -- Lerna manages our dependencies, but NPM will create the lockfile by default.
 3. From the consuming application, navigate to the `package.json` directory and run `npm link <package>`.
+   - **Note:** If the consuming application is Code Studio, make sure you do this from the `apps/` directory.
 4. Now you can make changes to your package and see them in the consuming application. You have to rebuild (`npm run build` or `npm run build:prod` from the root of this repository) anytime you make a change in order to see that change reflected in the consuming app because the consumer looks at your package's `dist/` output.
    - **Note:** Testing in Code Studio will only work with a production build.
 
