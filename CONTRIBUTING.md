@@ -194,7 +194,7 @@ packages/my-component
     MyComponent.test.js
   lib
     index.js
-    my_component.module.scss
+    my-component.module.scss
     MyComponent.jsx
   package.json
   README.md
