@@ -216,6 +216,7 @@ For managing common `devDependencies` (like React), see [this guide from Lerna](
 - [commitlint](https://commitlint.js.org) enforces commit linting. Currently set up to enforce the [Conventional Commits](https://www.conventionalcommits.org) specification.
 - [husky](https://typicode.github.io/husky) for git hooks.
 - [prettier](https://prettier.io) for code formatting. It's best to [configure your editor](https://prettier.io/docs/en/editors.html) to run prettier on save, but it will also auto-format before committing.
-- [eslint](https://eslint.org) for consistency and finding possible code problems. It's best to [configure your editor](https://eslint.org/docs/user-guide/integrations) to run eslint, but it will also run (will not auto-fix) before committing.
+- [eslint](https://eslint.org) for consistency and finding possible code problems in JavaScript. It's best to [configure your editor](https://eslint.org/docs/user-guide/integrations) to run eslint, but it will also run (will not auto-fix) before committing.
+- [stylelint](https://stylelint.io/) for consistency and finding possible problems in styles (SCSS). It's best to [configure your editor](https://stylelint.io/user-guide/integrations/editor/) to run stylelint, but it will also run (will not auto-fix) before committing.
 - [jest](https://jestjs.io/) for test harnessing and [testing library](https://testing-library.com/) for React testing utilities.
 - [GitHub Actions](https://github.com/features/actions) for continuous integration.
