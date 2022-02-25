@@ -15,7 +15,7 @@
     - [Adding Another `@dsco_` Package as a Dependency](#adding-another-dsco_-package-as-a-dependency)
     - [Testing/Installing an Unpublished Package](#testinginstalling-an-unpublished-package)
   - [Developing a Package Locally Within a Consuming Application](#developing-a-package-locally-within-a-consuming-application)
-  - [Styleguides](#styleguides)
+  - [Style Guides](#style-guides)
     - [JavaScript](#javascript)
     - [SCSS](#scss)
     - [Packages](#packages)
@@ -30,7 +30,7 @@ To contribute code to this repository, you will almost always make a pull reques
 
 ### Contribution Process
 
-Before your first contribution, make sure to read through this file and familiarize yourself with [our tools](#tools) and [styleguides](#styleguides). Then you can...
+Before your first contribution, make sure to read through this file and familiarize yourself with [our tools](#tools) and [style guides](#style-guides). Then you can...
 
 1. Make a local branch off of the default branch and make some changes.
 2. When you're ready to commit, your commit messages must follow [conventional commits](https://www.conventionalcommits.org). **This is the most important part of the process!** Lerna uses our commit messages to decide the next version numbers and changelog content when we publish packages ([see more details from Lerna](https://github.com/lerna/lerna/blob/main/commands/version/README.md#--conventional-commits)). There is pre-commit linting set up to help you, but here are some additional tips that linting can't help with:
@@ -103,7 +103,7 @@ Run `npm run test` from the root directory to run the entire suite. `npm run tes
 
 Creating a new component may or may not involve creating a new package for that component. For example, if `@dsco_/form` exists and you're creating a component that belongs in a form, you should add that component to the existing package (don't forget to add tests and stories!).
 
-Creating a component that should be in a new package is more involved. Make sure to review [our Styleguides](#styleguides) beforehand if you aren't already familiar; consistency is key in a component library!
+Creating a component that should be in a new package is more involved. Make sure to review [our style guides](#style-guides) beforehand if you aren't already familiar; consistency is key in a component library!
 
 1. Create the package scaffolding with [`lerna create @dsco_/<name>`](https://github.com/lerna/lerna/tree/main/commands/create#readme). You'll be asked a series of questions that influence how the resulting `package.json` is configured. You should change the following when prompted:
    - License should be "MIT"
@@ -161,13 +161,13 @@ If want to test your package before publishing it to NPM, here are the steps to 
 4. Now you can make changes to your package and see them in the consuming application. You have to rebuild (`npm run build` or `npm run build:prod` from the root of this repository) anytime you make a change in order to see that change reflected in the consuming app because the consumer looks at your package's `dist/` output.
    - **Note:** Testing in Code Studio will only work with a production build.
 
-## Styleguides
+## Style Guides
 
 Many of these conventions are already enforced through linting (or should be if we notice any that are missing!), but the general conventions are also laid out below.
 
 ### JavaScript
 
-- Follow the Airbnb styleguides for [JavaScript](https://airbnb.io/javascript/) and [React](https://airbnb.io/javascript/react/).
+- Follow the Airbnb style guides for [JavaScript](https://airbnb.io/javascript/) and [React](https://airbnb.io/javascript/react/).
 - JavaScript files: `camelCase.js`.
 - React components and their files: `PascalCase.jsx`. See ["User-Defined Components Must Be Capitalized"](https://reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized) for more detail.
 - A unit test filename should match the file it's testing and end in `.test.js`.
@@ -175,7 +175,7 @@ Many of these conventions are already enforced through linting (or should be if 
 
 ### SCSS
 
-- Follow the [Sass guidelines](https://sass-guidelin.es) as a styleguide.
+- Follow the [Sass guidelines](https://sass-guidelin.es) as a style guide.
 - Global SCSS files that will be imported elsewhere: `_kebab-case.scss`
 - SCSS module files: `kebab-case.module.scss`
 - It's important to include/exclude `.module` because Webpack will bundle the file differently and it affects the scope of the styles in that file.
