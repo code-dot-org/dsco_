@@ -8,6 +8,7 @@
 
 @mixin font-regular-italic {
   @include font-regular;
+
   font-family: $dsco-font-family-default, 'Gotham 4i', sans-serif;
   font-style: italic;
 }
@@ -20,6 +21,7 @@
 
 @mixin font-medium-italic {
   @include font-medium;
+
   font-family: $dsco-font-family-default, 'Gotham 5i', sans-serif;
   font-style: italic;
 }
@@ -32,6 +34,7 @@
 
 @mixin font-bold-italic {
   @include font-bold;
+
   font-family: $dsco-font-family-default, 'Gotham 7i', sans-serif;
   font-style: italic;
 }

@@ -7,4 +7,5 @@ babel.config.js
 commitlint.config.js
 postcss.config.js
 prettier.config.js
+stylelint.config.js
 webpack.config.js
