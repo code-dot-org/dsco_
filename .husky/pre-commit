@@ -5,6 +5,6 @@ echo "Running prettier..."
 npm run prettier
 echo "\n"
 
-echo "Running eslint..."
+echo "Running linters..."
 npm run lint
 echo "\n"

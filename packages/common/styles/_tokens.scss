@@ -1,23 +1,20 @@
 @import './colors';
 
-// Font-face and weights
-// Weights:
+// Font face and weights
+// Weight ranges:
 //   100-300 - unused to leave room for lighter font; falls back to normal
 //   400-500 - regular
 //   600-700 - medium
 //   800-900 - bold
+$dsco-font-face-regular: 400 500;
+$dsco-font-face-medium: 600 700;
+$dsco-font-face-bold: 800 900;
 $dsco-font-weight-regular: 400;
 $dsco-font-weight-medium: 600;
 $dsco-font-weight-bold: 800;
 
-$dsco-font-face-regular: 400 500;
-$dsco-font-face-medium: 600 700;
-$dsco-font-face-bold: 800 900;
-
 // Font
-// Use font mixins to set all font properties and fallbacks.
-$dsco-font-family-default: 'Gotham';
-
+$dsco-font-family-default: 'Gotham'; // Use font mixins to set all font properties and fallbacks.
 $dsco-font-color: $dsco-charcoal;
 $dsco-font-size: 14px;
 

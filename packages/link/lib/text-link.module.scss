@@ -12,6 +12,7 @@ a.textlink {
   $margin-ltr: 0 -#{$gap} 0 0;
   $margin-rtl: 0 0 0 -#{$gap};
   @include mixins.rtl(margin, $margin-ltr, $margin-rtl);
+
   > * {
     $child-margin-ltr: 0 #{$gap} 0 0;
     $child-margin-rtl: 0 0 0 #{$gap};
@@ -19,12 +20,13 @@ a.textlink {
   }
 
   // Remove text-decoration from child icon on hover.
-  & > i:before {
+  & > i::before {
     display: inline-block;
   }
+
   &:active,
   &:hover {
-    & > i:before {
+    & > i::before {
       text-decoration: none;
     }
   }
