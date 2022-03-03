@@ -10,6 +10,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -29,7 +30,12 @@ module.exports = {
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
     'no-unneeded-ternary': 'error',
-    'no-unused-expressions': ['error', {enforceForJSX: true}],
+    'no-unused-expressions': [
+      'error',
+      {
+        enforceForJSX: true,
+      },
+    ],
     'no-unused-vars': 'error',
     'no-useless-concat': 'error',
     'no-useless-return': 'error',
@@ -49,7 +55,9 @@ module.exports = {
     'react/default-props-match-prop-types': 'error',
     'react/function-component-definition': [
       'error',
-      {namedComponents: ['function-declaration', 'arrow-function']},
+      {
+        namedComponents: ['function-declaration', 'arrow-function'],
+      },
     ],
     'react/no-arrow-function-lifecycle': 'error',
     'react/no-invalid-html-attribute': 'error',
@@ -64,26 +72,46 @@ module.exports = {
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-brace-presence': [
       'error',
-      {props: 'never', children: 'never'},
+      {
+        props: 'never',
+        children: 'never',
+      },
     ],
     'react/jsx-curly-newline': ['error', 'consistent'],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-handler-names': 'error',
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-no-target-blank': ['error', {enforceDynamicLinks: 'never'}],
+    'react/jsx-no-target-blank': [
+      'error',
+      {
+        enforceDynamicLinks: 'never',
+      },
+    ],
     'react/jsx-pascal-case': 'error',
     'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-tag-spacing': 'error',
     'sort-keys': 'error',
-    'spaced-comment': ['error', 'always', {block: {balanced: true}}],
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        block: {
+          balanced: true,
+        },
+      },
+    ],
     strict: 'error',
     yoda: 'error',
   },
   settings: {
     'import/resolver': {
-      webpack: {config: './webpack.config.js'},
+      webpack: {
+        config: './webpack.config.js',
+      },
     },
-    react: {version: 'detect'},
+    react: {
+      version: 'detect',
+    },
   },
 };
